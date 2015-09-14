@@ -31,7 +31,6 @@ describe('tweetShortener', function() {
     var under140 = "OMG you guys, you won't believe how sweet my kitten is. My kitten is like super cuddly and too cute to be believed right?";
     var over140Too = "GUISEEEEE this is so fun! I'm tweeting for you guys and this tweet is SOOOO long it's gonna be way more than you would think twitter can handle, so shorten it up you know what I mean? I just can never tell how long to keep typing!";
     var under140Too = "New game. Middle aged tweet followed by #youngPeopleHashTag Example: Gotta get my colonoscopy and mammogram soon. Prevention is key! #swag";
-
     expect(tweetShortener.selectiveShortener(over140).length).toBeLessThan(over140.length);
     expect(tweetShortener.selectiveShortener(under140).length).toEqual(under140.length);
     expect(tweetShortener.selectiveShortener(over140Too).length).toBeLessThan(over140Too.length);
